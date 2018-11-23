@@ -3,12 +3,14 @@
     <app-title-generator :title="subtitle"></app-title-generator>   
     <div class="row" id="buttonField">
       <button id="selectedButton">Top Performers</button>
-      <button>Bottom Performers</button>
+      <button id="unselectedButton">Bottom Performers</button>
     </div>
     <div class="row">
       <app-constituent-performance :titles="titles" :constituentData="constituentData"></app-constituent-performance>
     </div>
-    <p id="showMore">Show More</p>
+    <div class="row">
+      <router-link to="/Overview" id="showMore"><a>Show More</a></router-link>      
+    </div>    
   </div>
 </template>
 
@@ -77,10 +79,14 @@
     background-color: #0076C0;    
   }
 
+  #unselectedButton {
+    background-color: #F0F4F7;
+  }
+
   #showMore {
     margin-bottom: 50px;
+    margin-left: 20px;
+    font-size: 12px;
     text-decoration: underline;
-    color: #3693CD;
-    cursor: pointer;
   }
 </style>

@@ -10,7 +10,7 @@ import ConstituentHoldings from '../containers/ConstituentHoldings/ConstituentHo
 export const routes = [
   {path: '', component: Overview},
   {path: '/Overview', component: Overview},  
-  {path: '/Asset Flows', component: AssetFlows},
+  {path: '/AssetFlows', component: AssetFlows},
   {path: '/Performance', component: Performance},  
   {path: '/Constituents', component: Constituents},
   {path: '/SectorAllocation', component: SectorAllocation},

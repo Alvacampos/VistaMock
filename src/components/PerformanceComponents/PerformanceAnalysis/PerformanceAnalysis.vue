@@ -2,8 +2,8 @@
   <div class="container-flex">
     <div class="row wrapper">      
       <p class="miniButton"><strong>Data Range: </strong>Nov 2017 to Jun 2018</p>
-      <p class="miniButton"><strong>Data Range: </strong>Nov 2017 to Jun 2018</p> 
-      <p class="miniButton"><strong>Data Range: </strong>Nov 2017 to Jun 2018</p>      
+      <p class="miniButton"><strong>Risk Index: </strong>S&P 500</p> 
+      <p class="miniButton"><strong>Data Range: </strong>FTSE 3 Mo. T-Bill</p>      
     </div>
     <app-title-generator :title="subtitle"></app-title-generator>   
     <div class="row wrapper">      
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+  import DropdownGenerator from '../../DropdownGenerator/DropdownGenerator.vue';
   import TitleGenerator from '../../TitleGenerator/TitleGenerator.vue'
   import TableGenerator from '../TableGenerator/TableGenerator.vue';
   export default {
@@ -33,7 +34,8 @@
     },
     components: {
       'app-table-generator': TableGenerator,
-      'app-title-generator': TitleGenerator 
+      'app-title-generator': TitleGenerator,
+      'app-dropdown-generator': DropdownGenerator
     },
     computed: {
       tableGenerator() {

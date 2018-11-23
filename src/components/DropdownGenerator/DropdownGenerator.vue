@@ -20,8 +20,7 @@
     font-size: 15px;
     font-weight: bold;   
     color: #003667;
-    background-color: #E0E6ED;
-    
+    background-color: #E0E6ED;    
     padding: 2px;
     margin: 0;
   }

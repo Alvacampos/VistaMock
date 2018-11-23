@@ -14,8 +14,7 @@
   </div>
 </template>
 
-<script>
-  import Overview from "./containers/Overview/Overview.vue";
+<script>  
   import EquityBar from "./components/NavBars/EquityBar/EquityBar.vue";
   import ProfileBar from "./components/NavBars/ProfileBar/ProfileBar.vue";
   import SideDashboard from "./components/NavBars/SideDashboard/SideDashboard.vue";  
@@ -23,8 +22,7 @@
     components: {
       ProfileBar: ProfileBar,
       EquityBar: EquityBar,    
-      SideDashboard: SideDashboard,
-      Overview: Overview
+      SideDashboard: SideDashboard      
     }
   };
 </script>
