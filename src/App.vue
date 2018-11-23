@@ -36,16 +36,8 @@
     font-family: "Arimo", sans-serif;
   }
 
-  div#title {
-    background-color: #E0E6ED;
-    padding: 10px;
+  #chartRow {
+    margin-top: 20px;
   }
-
-  div.wrapper p {  
-    font-size: 15px;
-    font-weight: bold;
-    font-family: "Arimo", sans-serif;
-    color: #003667;
-    height: 2px;
-  }
+  
 </style>

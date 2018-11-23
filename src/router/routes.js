@@ -13,8 +13,8 @@ export const routes = [
   {path: '/Asset Flows', component: AssetFlows},
   {path: '/Performance', component: Performance},  
   {path: '/Constituents', component: Constituents},
-  {path: '/Sector Allocation', component: SectorAllocation},
-  {path: '/Ownership Activity', component: OwnershipActivity},
-  {path: '/Universe Comparison', component: UniverseComparison},
-  {path: '/Constituent Holdings', component: ConstituentHoldings} 
+  {path: '/SectorAllocation', component: SectorAllocation},
+  {path: '/OwnershipActivity', component: OwnershipActivity},
+  {path: '/UniverseComparison', component: UniverseComparison},
+  {path: '/ConstituentHoldings', component: ConstituentHoldings} 
 ];

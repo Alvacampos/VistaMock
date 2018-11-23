@@ -14,7 +14,7 @@
 
 <script>
   import TableGenerator from '../TableGenerator/TableGenerator.vue';
-  import TitleGenerator from '../../TitleGenerator/titleGenerator.vue'
+  import TitleGenerator from '../../TitleGenerator/TitleGenerator.vue';
   export default {
      data() {
       return {

@@ -1,25 +1,24 @@
 <template>
-  <div class="container-flex">   
+  <div class="container-flex">
     <app-dropdown-menu :subtitle="subtitle"></app-dropdown-menu>
     <div class="row" id="chartRow">
-      <app-distribution-chart :chart="chart"></app-distribution-chart>
-    </div>   
+      <app-growth-chart></app-growth-chart>
+    </div>
   </div>  
 </template>
 
 <script>
-  import DistributionChart from '../../Chart/Chart.vue';
+  import GrowthChart from '../../Chart/StockChart.vue';
   import DropdownMenu from '../../DropdownGenerator/DropdownGenerator.vue';
   export default {
     data() {
       return {
-        subtitle: 'Distribution of Returns',
-        chart: 'column'
+        subtitle: 'Growth of $1000',
       }
     },
     components: {
       'app-dropdown-menu': DropdownMenu,
-      'app-distribution-chart': DistributionChart     
+      'app-growth-chart': GrowthChart     
     }
-  }
+  }  
 </script>

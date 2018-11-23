@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import TitleGenerator from '../../TitleGenerator/titleGenerator.vue'
+  import TitleGenerator from '../../TitleGenerator/TitleGenerator.vue'
   import ConstituentPerformanceInformation from './ConstituentPerformanceInformation.vue';
   export default {
     data() {
@@ -48,6 +48,10 @@
     font-family: "Arimo", sans-serif;
     color: #003667;
     height: 2px;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 
   #title {

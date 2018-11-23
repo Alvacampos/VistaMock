@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-flex">
     <app-title-generator :title="subtitle"></app-title-generator>    
     <div class="row">
       <div class="col">
@@ -11,7 +11,7 @@
 
 <script>  
   import UniverseInformation from './UniverseInformation.vue';
-  import TitleGenerator from '../../TitleGenerator/titleGenerator.vue'
+  import TitleGenerator from '../../TitleGenerator/TitleGenerator.vue';
   export default {
     data() {
       return {

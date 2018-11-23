@@ -1,8 +1,8 @@
 <template>
-  <div class="container">    
+  <div class="container-flex">    
      <app-title-generator :title="subtitle"></app-title-generator>
     <div class="row">
-      <img src="https://www.amcharts.com/wp-content/uploads/2013/12/demo_7395_light.jpg" alt="Img">      
+      <app-growth-chart :chart="chart"></app-growth-chart>      
     </div>
     <div class="row">
       <div class="col">
@@ -13,7 +13,8 @@
 </template>
 
 <script>
-  import TitleGenerator from '../../TitleGenerator/titleGenerator.vue'
+  import GrowthChart from '../../Chart/Chart.vue';
+  import TitleGenerator from '../../TitleGenerator/TitleGenerator.vue';
   import Information from "../GrowthSectorCommonComponent/Information.vue";
   export default {
     data() {
@@ -27,12 +28,14 @@
           '5 Year Cumulative Performance',
           '5 Year Annual Performance',
           '5 Year Max Drawdown'
-        ],                     
+        ],
+        chart: 'area'                     
       };
     },
     components: {
       'app-information': Information,
-      'app-title-generator': TitleGenerator 
+      'app-title-generator': TitleGenerator,
+      'app-growth-chart': GrowthChart
     },
     computed: {
       profileData() {
@@ -41,12 +44,3 @@
     }
   };
 </script>
-
-<style scoped>  
-  img {
-    display: block;
-    margin: 20px auto;
-    height: 400px;
-    width: 75%;
-  }  
-</style>

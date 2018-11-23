@@ -2,9 +2,9 @@
   <div>
     <h2>All global Equity</h2>
     <ul class="nav">      
-      <router-link :to="link" tag="li" v-for="(link,key) in links" :key="key" exact>
-        <a>{{link}}</a>
-      </router-link>
+      <router-link :to="link[0]" tag="li" v-for="(link,key) in anchors" :key="key" exact>
+        <a>{{link[1]}}</a>
+      </router-link>          
     </ul>
   </div>
 </template>
@@ -13,16 +13,16 @@
 export default {
   data() {
     return {
-      links: [
-        "Overview",
-        "Performance",
-        "Asset Flows",
-        "Universe Comparison",
-        "Constituents",
-        "Constituent Holdings",
-        "Sector Allocation",
-        "Ownership Activity"
-      ]
+      anchors: {
+        overview: ['Overview','Overview'],
+        performance: ['Performance','Performance'],
+        assetFlows: ['AssetFlows','Asset Flows'],
+        universeComparison: ['UniverseComparison','Universe Comparison'],
+        constituents: ['Constituents','Constituents'],
+        constituentHoldings: ['ConstituentHoldings','Constituent Holdings'],
+        sectorAllocation: ['SectorAllocation','Sector Allocation'],
+        ownershipActivity: ['OwnershipActivity','Ownership Activity']
+      }      
     };
   }
 };
