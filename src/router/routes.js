@@ -1,11 +1,11 @@
-import Overview from '../containers/Overview/Overview.vue';
-import AssetFlows from '../containers/AssetFlows/AssetFlows.vue';
-import Performance from '../containers/Performance/Performance.vue';
-import Constituents from '../containers/Constituents/Constituents.vue';
-import SectorAllocation from '../containers/SectorAllocation/SectorAllocation.vue';
-import OwnershipActivity from '../containers/OwnershipActivity/OwnershipActivity.vue';
-import UniverseComparison from '../containers/UniverseComparison/UniverseComparison.vue';
-import ConstituentHoldings from '../containers/ConstituentHoldings/ConstituentHoldings.vue';
+import Overview from '../components/OverviewComponents/Overview.vue';
+import AssetFlows from '../components/AssetFlowsComponents/AssetFlows.vue';
+import Performance from '../components/PerformanceComponents/Performance.vue';
+import Constituents from '../components/ConstituentsComponents/Constituents.vue';
+import SectorAllocation from '../components/SectorAllocationComponents/SectorAllocation.vue';
+import OwnershipActivity from '../components/OwnershipActivityComponents/OwnershipActivity.vue';
+import UniverseComparison from '../components/UniverseComparisonComponents/UniverseComparison.vue';
+import ConstituentHoldings from '../components/ConstituentHoldingsComponents/ConstituentHoldings.vue';
 
 export const routes = [
   {path: '', component: Overview},

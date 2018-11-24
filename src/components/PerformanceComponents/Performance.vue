@@ -12,14 +12,14 @@
 </template>
 
 <script>
-  import Footer from '../../components/Footer/Footer.vue';
-  import Growth1000 from '../../components/PerformanceComponents/Growth1000/Growth1000.vue';
-  import RiskVsReturn from '../../components/PerformanceComponents/RiskVsReturn/RiskVsReturn.vue';
-  import DistributionReturns from '../../components/PerformanceComponents/DistributionOfReturns/DistributionReturns.vue'
-  import EfficiencyMeasures from '../../components/PerformanceComponents/EfficiencyMeasures/EfficiencyMeasures.vue'
-  import RiskAndRegression from '../../components/PerformanceComponents/RiskAndRegression/RiskAndRegression.vue'
-  import PerformanceAnalysis from '../../components/PerformanceComponents/PerformanceAnalysis/PerformanceAnalysis.vue';
-  import ConstituentPerformance from '../../components/PerformanceComponents/ConstituentPerformance/ConstituentPerformance.vue';
+  import Footer from '../Footer/Footer.vue';
+  import Growth1000 from './Growth1000/Growth1000.vue';
+  import RiskVsReturn from './RiskVsReturn/RiskVsReturn.vue';
+  import DistributionReturns from './DistributionOfReturns/DistributionReturns.vue'
+  import EfficiencyMeasures from './EfficiencyMeasures/EfficiencyMeasures.vue'
+  import RiskAndRegression from './RiskAndRegression/RiskAndRegression.vue'
+  import PerformanceAnalysis from './PerformanceAnalysis/PerformanceAnalysis.vue';
+  import ConstituentPerformance from './ConstituentPerformance/ConstituentPerformance.vue';
   export default {
     components: {
       'app-footer': Footer,

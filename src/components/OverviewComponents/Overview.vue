@@ -15,10 +15,10 @@
 </template>
 
 <script>
-import Footer from "../../components/Footer/Footer.vue";
-import Growth from "../../components/OverviewComponents/Growth/Growth.vue";
-import Universe from "../../components/OverviewComponents/UniverseInformation/Universe.vue";
-import SectorAllocations from "../../components/OverviewComponents/SectorAllocation/SectorAllocations.vue";
+import Footer from "../Footer/Footer.vue";
+import Growth from "./Growth/Growth.vue";
+import Universe from "./UniverseInformation/Universe.vue";
+import SectorAllocations from "./SectorAllocation/SectorAllocations.vue";
 
 export default {
   components: {

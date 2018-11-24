@@ -29,6 +29,10 @@ export default {
 </script>
 
 <style scoped>
+  ul {
+    display: inline-flex;
+  }
+  
   a{
     margin: 0 10px;
   }
