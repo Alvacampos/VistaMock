@@ -1,7 +1,7 @@
 <template>
   <div class="container-flex">
     <app-title-generator :title="subtitle"></app-title-generator>
-    <div class="row">
+    <div class="row" id="tableWrapper">
       <div class="col">
         <app-infomation :profileData="profileData" :titles="titles"></app-infomation>      
       </div>      

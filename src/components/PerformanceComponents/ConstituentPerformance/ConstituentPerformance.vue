@@ -2,11 +2,14 @@
   <div class="container-flex">
     <app-title-generator :title="subtitle"></app-title-generator>   
     <div class="row" id="buttonField">
-      <button id="selectedButton">Top Performers</button>
-      <button id="unselectedButton">Bottom Performers</button>
+      <button id="selectedButton" @click="changeInfo">Top Performers</button>
+      <button id="unselectedButton" @click="changeInfo">Bottom Performers</button>
     </div>
-    <div class="row">
+    <div class="row" v-if="showInfo">
       <app-constituent-performance :titles="titles" :constituentData="constituentData"></app-constituent-performance>
+    </div>
+    <div class="row" v-else-if="!showInfo">
+      <strong>More Info</strong>
     </div>
     <div class="row">
       <router-link to="/Overview" id="showMore"><a>Show More</a></router-link>      
@@ -28,7 +31,8 @@
           'Net Flow- 1 Year',
           'Top Holding',
           'Consultant Views'
-        ]
+        ],
+        showInfo: true
       }
     },
     components: {
@@ -39,7 +43,12 @@
       constituentData() {
         return this.$store.state.performance.constituentPerformance;
       }
-    }
+    },
+    methods: {
+      changeInfo() {
+        this.showInfo= !this.showInfo
+      }
+    }    
   }
 </script>
 

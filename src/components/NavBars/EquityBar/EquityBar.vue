@@ -35,6 +35,7 @@ export default {
   
   a{
     margin: 0 10px;
+    color: #999999;
   }
   
 </style>

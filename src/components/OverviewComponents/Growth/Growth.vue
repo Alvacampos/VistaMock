@@ -1,9 +1,8 @@
 <template>
   <div class="container-flex">    
      <app-title-generator :title="subtitle"></app-title-generator>
-    <div class="row">
-      <app-growth-chart :chart="chart"></app-growth-chart>      
-    </div>
+    <div class="row" id="chartRow">
+      <app-growth-chart :chart="chart"></app-growth-chart></div>
     <div class="row">
       <div class="col">
         <app-information :profileData="profileData" :titles="titles"></app-information>  

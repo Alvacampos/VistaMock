@@ -38,4 +38,7 @@
     margin-top: 20px;
   }
   
+  #tableWrapper {
+    margin-top: -1px;
+  }
 </style>
