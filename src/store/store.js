@@ -526,5 +526,8 @@ export const store = new Vuex.Store({
         ]
       }
     }
+  },
+  getters: {
+    //TODO: reverse getter
   }
 });

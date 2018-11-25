@@ -5,10 +5,10 @@
       <button id="selectedButton" @click="changeInfo">Top Performers</button>
       <button id="unselectedButton" @click="changeInfo">Bottom Performers</button>
     </div>
-    <div class="row" v-if="showInfo">
+    <div class="row" v-if="showTop">
       <app-constituent-performance :titles="titles" :constituentData="constituentData"></app-constituent-performance>
     </div>
-    <div class="row" v-else-if="!showInfo">
+    <div class="row" v-if="showBottom">
       <strong>More Info</strong>
     </div>
     <div class="row">
@@ -32,7 +32,8 @@
           'Top Holding',
           'Consultant Views'
         ],
-        showInfo: true
+        showTop: true,
+        showBottom: false
       }
     },
     components: {
@@ -46,7 +47,9 @@
     },
     methods: {
       changeInfo() {
-        this.showInfo= !this.showInfo
+        //TODO: Smart rendering
+        this.showTop = !this.showTop;
+        this.showBottom = !this.showBottom;
       }
     }    
   }
