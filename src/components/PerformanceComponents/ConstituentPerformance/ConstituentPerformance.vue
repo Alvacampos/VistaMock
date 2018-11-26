@@ -2,15 +2,25 @@
   <div class="container-flex">
     <app-title-generator :title="subtitle"></app-title-generator>   
     <div class="row" id="buttonField">
-      <button id="selectedButton" @click="changeInfo">Top Performers</button>
-      <button id="unselectedButton" @click="changeInfo">Bottom Performers</button>
+      <button 
+        class="buttonPerformance" 
+        @click="showTopData(); activeTop();"
+        :class="{active: activeBtn === 'buttonPerformance1'}">Top Performers</button>
+      <button 
+        class="buttonPerformance" 
+        @click="showBottomData(); activeBottom();"
+        :class="{active: activeBtn === 'buttonPerformance2'}">Bottom Performers</button>
     </div>
-    <div class="row" v-if="showTop">
-      <app-constituent-performance :titles="titles" :constituentData="constituentData"></app-constituent-performance>
-    </div>
-    <div class="row" v-if="showBottom">
-      <strong>More Info</strong>
-    </div>
+    <div class="row">
+      <app-constituent-performance 
+        :titles="titles" 
+        :constituentData="constituentTopData" 
+        v-if="showTop"></app-constituent-performance>
+      <app-constituent-performance 
+        :titles="titles" 
+        :constituentData="constituentBottomData" 
+        v-if="showBottom"></app-constituent-performance>
+    </div>    
     <div class="row">
       <router-link to="/Overview" id="showMore"><a>Show More</a></router-link>      
     </div>    
@@ -33,7 +43,8 @@
           'Consultant Views'
         ],
         showTop: true,
-        showBottom: false
+        showBottom: false,
+        activeBtn: 'buttonPerformance1'
       }
     },
     components: {
@@ -41,15 +52,27 @@
       'app-constituent-performance': ConstituentPerformanceInformation
     },
     computed: {
-      constituentData() {
+      constituentTopData() {
         return this.$store.state.performance.constituentPerformance;
+      },
+      constituentBottomData() {
+        return this.$store.getters.resortState;
       }
     },
     methods: {
-      changeInfo() {
-        //TODO: Smart rendering
-        this.showTop = !this.showTop;
-        this.showBottom = !this.showBottom;
+      showTopData() {
+        this.showTop = true;
+        this.showBottom = false;     
+      },
+      showBottomData() {
+        this.showTop = false;
+        this.showBottom = true;
+      },
+      activeTop() {
+        this.activeBtn='buttonPerformance1'
+      },
+      activeBottom() {
+        this.activeBtn='buttonPerformance2'
       }
     }    
   }
@@ -87,12 +110,8 @@
     border: 1px solid #979797;
   }
 
-  #selectedButton {
+  .active {
     background-color: #0076C0;    
-  }
-
-  #unselectedButton {
-    background-color: #F0F4F7;
   }
 
   #showMore {

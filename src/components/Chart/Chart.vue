@@ -10,21 +10,29 @@ export default {
   data () {
     return {
       title: '',
-      points: [10, 0, 8, 2, 6, 4, 5, 5],
-      chartType: 'Spline',
       seriesColor: '#6fcd98',
       colorInputIsSupported: null,
       animationDuration: 1000,
       updateArgs: [true, true, {duration: 1000}],
       chartOptions: {
         chart: {
-          type: this.chart
+          type: this.chart.type
         },
         title: {
           text: ''
         },
+        xAxis: {
+          categories: this.chart.xAxis.categories,
+          min: this.chart.xAxis.min,
+          max: this.chart.xAxis.max
+        },
+        yAxis: {
+          min: this.chart.yAxis.min,
+          max: this.chart.yAxis.max
+        },     
         series: [{
-          data: [10, 0, 8, 2, 6, 4, 5, 5],
+          name: this.chart.series.name,
+          data: this.chart.series.data,
           color: '#6fcd98'
         }]
       }

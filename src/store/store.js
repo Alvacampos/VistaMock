@@ -108,8 +108,8 @@ export const store = new Vuex.Store({
           23.1         
         ]
       },
-      constituentPerformance: {
-        ashmoreGroupLocal: [
+      constituentPerformance: [
+        [
           'Ashmore Group plc: Ashmore Em Local Currency Corporate Debt Stragtegy', 
           29.61 +'%',
           '',
@@ -117,70 +117,70 @@ export const store = new Vuex.Store({
           '',
           ''
         ],
-        blackRockAquila: [
+        [
           'BlackRock: Aquila Life Overseas Fixed Benchmark Equity Fund',
           28.61 + '%',
           '',
           '',
           '',
           ''],
-        blackRockEurope: [
+         [
           'BlackRock: Europe Alpha Tilts', 
           24.56 + '%',
           '',
           '',
           '',
           ''],
-        ignisAsset: [
+         [
           'Ignis Asset Management: Japan Equity',
           23.89 + '%',
           '',
           '',
           '',
           ''],
-        ashmoreGroupGlobal: [
+        [
           'Ashmore Group plc: Ashmore EM Broad Global Active Equity Strategy',
           23.16 + '%',
           '',
           '',
           '',
           ''],
-        blackrockCanadian: [
+        [
           'BlackRock: Canadian Long Duration',
           22.49 + '%',
           '',
           '',
           '',
           ''],
-        ignisAssetManagment: [
+        [
           'Ignis Asset Management: Asia Pacific ex Japan Equity', 
           22.45 + '%',
           '',
           '',
           '',
           ''],
-        ashlandManagment: [
+        [
           'Ashland Management Incorporated: Large Cap Growth Diversified',
           21.96 + '%',
           '',
           '',
           '',
           ''],
-        blackrockFundamental: [
+         [
           'BlackRock: Fundamental Global Long Horizon',
           21.88 + '%',
           '',
           '',
           '',
           ''],
-        ashmoreLatin: [
+         [
           'Ashmore Group plc: Ashmore EM Latin America Small Cap Equity Strategy',
           21.65 + '%',
           '',
           '',
           '',
           '']
-      },
+      ],
       riskAndRegression: {
         standarDeviation: [
           'Standar Deviation',
@@ -528,6 +528,9 @@ export const store = new Vuex.Store({
     }
   },
   getters: {
-    //TODO: reverse getter
+    resortState: state => {
+      const aux = state.performance.constituentPerformance.slice();
+      return aux.reverse();
+    }
   }
 });

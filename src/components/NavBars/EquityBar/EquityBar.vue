@@ -2,7 +2,12 @@
   <div>
     <h2>All global Equity</h2>
     <ul class="nav">      
-      <router-link :to="link[0]" tag="li" v-for="(link,key) in anchors" :key="key" exact>
+      <router-link 
+        :to="link[0]" 
+        tag="li" 
+        v-for="(link,key) in anchors" 
+        :key="key" 
+        exact>
         <a>{{link[1]}}</a>
       </router-link>          
     </ul>
@@ -33,9 +38,13 @@ export default {
     display: inline-flex;
   }
   
-  a{
+  a {
     margin: 0 10px;
     color: #999999;
+  }
+
+  .active {
+    text-decoration: underline;
   }
   
 </style>
