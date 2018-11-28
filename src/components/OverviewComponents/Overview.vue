@@ -1,15 +1,13 @@
 <template>
-  <div class="container-full">
-    <div class="container-full">
-      <div class="row">
-        <div class="col">
-          <app-growth></app-growth>
-          <app-sector></app-sector>
-          <app-universe></app-universe>                    
-          <hr>
-          <app-footer></app-footer>    
-        </div>  
-      </div>        
+  <div class="container">    
+    <div class="row">
+      <div class="col">
+        <app-growth></app-growth>
+        <app-sector></app-sector>
+        <app-universe></app-universe>                    
+        <hr>
+        <app-footer></app-footer>    
+      </div>          
     </div>       
   </div>
 </template>
@@ -29,10 +27,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-  .container-full {
-    margin: 0 auto;
-    width: 100%;
-  }
-</style>

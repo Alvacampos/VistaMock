@@ -16,7 +16,8 @@ export default {
       updateArgs: [true, true, {duration: 1000}],
       chartOptions: {
         chart: {
-          type: this.chart.type
+          type: this.chart.type,
+          zoomType: 'xy'
         },
         title: {
           text: ''
@@ -27,14 +28,26 @@ export default {
           max: this.chart.xAxis.max
         },
         yAxis: {
+          title: {
+            text: ''
+          },
           min: this.chart.yAxis.min,
           max: this.chart.yAxis.max
         },     
         series: [{
+          showInLegend: false,
           name: this.chart.series.name,
           data: this.chart.series.data,
           color: '#6fcd98'
-        }]
+        }],
+        tooltip: {
+          pointFormat: '{series.name}: <b>{point.y}</b><br/>',
+          backgroundColor: '#FCFFC5',
+          valueSuffix: ' $',
+          borderWidth: 3,
+          borderRadius: 6,
+          shared: true
+        }
       }
     }
   }  
@@ -44,5 +57,6 @@ export default {
 <style scoped>
   div {
     width: 100%;
+    margin: 20px 0;
   }  
 </style>

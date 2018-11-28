@@ -85,16 +85,7 @@
     font-family: "Arimo", sans-serif;
     color: #003667;
     height: 2px;
-  }
-
-  button:hover {
-    cursor: pointer;
-  }
-
-  #title {
-    background-color: #E0E6ED;
-    padding: 10px;
-  } 
+  }  
 
   #buttonField {
     margin-top: 5px;
@@ -108,10 +99,6 @@
     height: 25px;
     text-align: center;
     border: 1px solid #979797;
-  }
-
-  .active {
-    background-color: #0076C0;    
   }
 
   #showMore {

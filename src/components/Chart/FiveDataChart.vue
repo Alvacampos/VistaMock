@@ -50,12 +50,24 @@ export default {
         },
         series: [
           {
-            name: this.chart.series[0].name1,
+            showInLegend: false,       
             data: this.chart.series[0].data1
           }, 
           {
-            name: this.chart.series[1].name2,
+            showInLegend: false,
             data: this.chart.series[1].data2
+          }, 
+          {
+            showInLegend: false,
+            data: this.chart.series[2].data3
+          }, 
+          {
+            showInLegend: false,
+            data: this.chart.series[3].data4
+          }, 
+          {
+            showInLegend: false,
+            data: this.chart.series[4].data5
           }
         ],
         tooltip: {
@@ -75,6 +87,6 @@ export default {
 <style scoped>
   div {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 20px 0;
   }  
 </style>

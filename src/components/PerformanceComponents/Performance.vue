@@ -1,13 +1,18 @@
 <template>
   <div class="container">
-    <app-performance-analysis></app-performance-analysis>
-    <app-constituent-performance></app-constituent-performance>
-    <app-risk-regresion></app-risk-regresion>
-    <app-efficiency-measures></app-efficiency-measures>
-    <app-distribution-returns></app-distribution-returns>
-    <app-risk-return></app-risk-return>
-    <app-growth-1000></app-growth-1000>
-    <app-footer></app-footer>
+    <div class="row">
+      <div class="col">
+        <app-performance-analysis></app-performance-analysis>
+        <app-constituent-performance></app-constituent-performance>
+        <app-risk-regresion></app-risk-regresion>
+        <app-efficiency-measures></app-efficiency-measures>
+        <app-distribution-returns></app-distribution-returns>
+        <app-risk-return></app-risk-return>
+        <app-growth-1000></app-growth-1000>
+        <hr/>
+        <app-footer></app-footer>
+      </div>
+    </div>    
   </div>
 </template>
 

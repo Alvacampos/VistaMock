@@ -258,8 +258,10 @@ export default {
   }
 }
 </script>
- <style scoped>
-.map {
-  min-height: 500px;
-}
- </style>
+
+<style scoped>
+  div {
+    width: 100%;
+    margin: 20px 0;
+  }  
+</style>

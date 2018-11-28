@@ -525,7 +525,53 @@ export const store = new Vuex.Store({
           23.1
         ]
       }
-    }
+    },
+    assetFlows: {
+      topProducts: [
+        [
+          'Ashmore Group plc: Ashmore Em Local Currency Corporate Debt Stragtegy', 
+          '$' + 86902.92,
+          '$' + 86902.92,
+          77.96
+        ],
+        [
+          'BlackRock: Aquila Life Overseas Fixed Benchmark Equity Fund',
+          '$' + 14348.6,
+          '$' + 14348.6,
+          73.67
+        ],
+        [
+          'BlackRock: Europe Alpha Tilts', 
+          '$' + 21672.88,
+          '$' + 21672.88,
+          21.44
+        ],
+        [
+          'Ignis Asset Management: Japan Equity',
+          '$' + 60165.07,
+          '$' + 60165.07,
+          6.37
+        ],
+        [
+          'Ashmore Group plc: Ashmore EM Broad Global Active Equity Strategy',
+          '$' + 40949.65,
+          '$' + 40949.65,
+          16.02
+        ],
+        [
+          'BlackRock: Canadian Long Duration',
+          '$' + 60357.01,
+          '$' + 60357.01,
+          97.65
+        ],
+        [
+          'Ignis Asset Management: Asia Pacific ex Japan Equity', 
+          '$' + 93445.85,
+          '$' + 93445.85,
+          22.68
+        ]
+      ]      
+    },
   },
   getters: {
     resortState: state => {

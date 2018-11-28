@@ -1,16 +1,20 @@
 <template>
-  <div>
-    <h2>All global Equity</h2>
-    <ul class="nav">      
-      <router-link 
-        :to="link[0]" 
-        tag="li" 
-        v-for="(link,key) in anchors" 
-        :key="key" 
-        exact>
-        <a>{{link[1]}}</a>
-      </router-link>          
-    </ul>
+  <div class="container">
+    <div class="row">
+      <h2>All global Equity</h2>
+    </div>
+    <div class="row">
+      <ul class="nav">      
+        <router-link 
+          :to="link[0]" 
+          tag="li" 
+          v-for="(link,key) in anchors" 
+          :key="key" 
+          exact>
+          <a>{{link[1]}}</a>
+        </router-link>
+      </ul>
+    </div>   
   </div>
 </template>
 
@@ -45,6 +49,11 @@ export default {
 
   .active {
     text-decoration: underline;
+  }
+
+  div.row {
+    margin-top: 10px;
+    color: #003667;
   }
   
 </style>

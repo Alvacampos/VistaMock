@@ -27,7 +27,7 @@
           },
           series: [{
             name1: 'eVestment All Global Equity',
-            data1: [999, 1105, 1500, 2000 ]
+            data1: [999, 1105, 1500, 2000]
           },{
             name2: 'MSCI World-ND',
             data2: [892, 1008, 1400, 1975]

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-flex">       
+  <div class="container-flex">        
     <app-title-generator :title="subtitle"></app-title-generator>  
     <div class="row" id="checkboxField">
       <div>
@@ -31,23 +31,21 @@
         chartInfo: {
           type: 'column',
           xAxis: {
-            categories: ['Q3 2013', 'Q4 2013', 'Q1 2016', 'Q2 2017'],
-            min: 0,            
+            categories: ['Q3 2013', 'Q4 2013', 'Q1 2016', 'Q2 2017'],          
           },
           yAxis: {
-            min: 0,
-            max: 7,
+            
           },
           series: [{            
-            data1: [2, 5, 5, 1]
+            data1: [-2, 3, 3.7, -3]
           },{           
-            data2: [3, 4, 4, 2]
+            data2: [-5, -1, 4, 2]
           },{           
-            data3: [3, 7, 4, 3]
+            data3: [4, 3, -0.5, -3]
           },{           
-            data4: [3, 1, 6, 4]
+            data4: [-3, -2, -3, -3]
           },{           
-            data5: [3, 6, 0, 5]
+            data5: [2, 4, -1.2, 2]
           }]
         }
       }
@@ -63,13 +61,38 @@
   label {
     padding-top: 2px;
   }
+  div.wrapper {
+    margin-bottom: 20px;
+  }
 
   div.wrapper {
     margin-bottom: 20px;
   }
 
+  p.miniButton {
+    font-size: 12px;    
+    padding: 10px;
+  }
+
+  .active {
+    background-color: #0076C0;    
+  }
+
   .checkBox {
     margin-left: 30px;
+  }
+
+  #buttonField {
+    margin-top: 5px;
+  }
+
+  #buttonField button {
+    padding: 0 15px;
+    margin: 0 10px;  
+    font-size: 13px;
+    height: 25px;
+    text-align: center;
+    border: 1px  #979797;    
   }
 
   #checkboxField {

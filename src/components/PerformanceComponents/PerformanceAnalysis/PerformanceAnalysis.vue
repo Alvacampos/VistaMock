@@ -49,13 +49,4 @@
   div.wrapper {
     margin-bottom: 20px;
   }
-
-  p.miniButton {
-    font-size: 12px;    
-    padding: 10px;
-  }
-
-  p.miniButton strong {
-    color: #474747;
-  }  
 </style>

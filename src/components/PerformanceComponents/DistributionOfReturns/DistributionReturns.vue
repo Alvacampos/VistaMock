@@ -38,7 +38,7 @@
     },
     components: {
       'app-dropdown-menu': DropdownMenu,
-      'app-distribution-chart': DistributionChart     
+      'app-distribution-chart': DistributionChart
     }
   }
 </script>

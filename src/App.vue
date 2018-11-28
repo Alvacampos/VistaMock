@@ -28,12 +28,28 @@
 </script>
 
 <style>
+  button:hover {
+    cursor: pointer;
+  }
+
+  p.miniButton {
+    font-size: 12px;    
+    padding: 10px;
+  }
+
+  p.miniButton strong {
+    color: #474747;
+  }
+
+  .active {
+    background-color: #0076C0;    
+  }
   .main {
     margin-left: 250px;
     padding: 0px 10px;
     font-family: "Arimo", sans-serif;
   }
-
+  
   #chartRow {
     margin-top: 20px;
   }

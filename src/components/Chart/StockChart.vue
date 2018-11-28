@@ -6,9 +6,10 @@
 
 <script>
 export default {
+  props: ['chart'],
   data () {
     return {
-      stockOptions: {
+      stockOptions: {        
         rangeSelector: {
           selected: 1
         },
@@ -16,13 +17,9 @@ export default {
           text: ''
         },
         series: [{
-          name: 'AAPL',
-          data: [10, 20, 10, 23, 65, 121, 44, 66, 98, 30, 32, 56, 25, 12, 53],
-          pointStart: Date.UTC(2018, 1, 1),
-          pointInterval: 1000 * 3600 * 24,
-          tooltip: {
-            valueDecimals: 2
-          }
+          showInLegend: false,          
+          data: this.chart.series.data,
+          color: '#6fcd98'
         }]
       }
     }
@@ -33,5 +30,6 @@ export default {
 <style scoped>
   div {
     width: 100%;
+    margin: 20px 0;
   }  
 </style>
