@@ -51,11 +51,13 @@ export default {
         series: [
           {
             showInLegend: false,       
-            data: this.chart.series[0].data1
+            data: this.chart.series[0].data1,
+            color: 'red'
           }, 
           {
             showInLegend: false,
-            data: this.chart.series[1].data2
+            data: this.chart.series[1].data2,
+            color: 'blue'
           }, 
           {
             showInLegend: false,

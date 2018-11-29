@@ -6,11 +6,11 @@
         <strong>Show: </strong>
       </div>
       <div class="checkBox">
-        <input type="checkbox" class="form-check-input" id="checkBox1">
+        <input type="checkbox" class="form-check-input" id="checkBox1" checked>
         <label class="form-check-label" for="checkBox1">Chart</label>
       </div>
       <div class="checkBox">
-        <input type="checkbox" class="form-check-input" id="checkBox2">
+        <input type="checkbox" class="form-check-input" id="checkBox2" disabled>
         <label class="form-check-label" for="checkBox2">Data Table</label>
       </div>      
     </div>

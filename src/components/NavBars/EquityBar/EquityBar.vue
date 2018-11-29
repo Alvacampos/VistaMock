@@ -6,12 +6,12 @@
     <div class="row">
       <ul class="nav">      
         <router-link 
-          :to="link[0]" 
+          :to="anchor.href" 
           tag="li" 
-          v-for="(link,key) in anchors" 
+          v-for="(anchor,key) in anchors" 
           :key="key" 
           exact>
-          <a>{{link[1]}}</a>
+          <a>{{anchor.label}}</a>
         </router-link>
       </ul>
     </div>   
@@ -22,16 +22,40 @@
 export default {
   data() {
     return {
-      anchors: {
-        overview: ['Overview','Overview'],
-        performance: ['Performance','Performance'],
-        assetFlows: ['AssetFlows','Asset Flows'],
-        universeComparison: ['UniverseComparison','Universe Comparison'],
-        constituents: ['Constituents','Constituents'],
-        constituentHoldings: ['ConstituentHoldings','Constituent Holdings'],
-        sectorAllocation: ['SectorAllocation','Sector Allocation'],
-        ownershipActivity: ['OwnershipActivity','Ownership Activity']
-      }      
+      anchors: [
+        {
+          label: 'Overview',
+          href: 'overview'
+        },
+        {
+          label: 'Performance',
+          href: 'performance'
+        },
+        {
+          label: 'Asset Flows',
+          href: 'assetFlows'
+        },
+        {
+          label: 'Universe Comparison',
+          href: 'universeComparison'
+        },
+        {
+          label: 'Constituents',
+          href: 'constituents'
+        },
+        {
+          label: 'Constituent Holdings',
+          href: 'constituentHoldings'
+        }
+        ,{
+          label: 'Sector Allocation',
+          href: 'sectorAllocation'
+        }
+        ,{
+          label: 'Ownership Activity',
+          href: 'ownershipActivity'
+        }        
+      ]      
     };
   }
 };

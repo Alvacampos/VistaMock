@@ -9,12 +9,12 @@ import ConstituentHoldings from '../components/ConstituentHoldingsComponents/Con
 
 export const routes = [
   {path: '', component: Overview},
-  {path: '/Overview', component: Overview},  
-  {path: '/AssetFlows', component: AssetFlows},
-  {path: '/Performance', component: Performance},  
-  {path: '/Constituents', component: Constituents},
-  {path: '/SectorAllocation', component: SectorAllocation},
-  {path: '/OwnershipActivity', component: OwnershipActivity},
-  {path: '/UniverseComparison', component: UniverseComparison},
-  {path: '/ConstituentHoldings', component: ConstituentHoldings} 
+  {path: '/overview', component: Overview},  
+  {path: '/assetFlows', component: AssetFlows},
+  {path: '/performance', component: Performance},  
+  {path: '/constituents', component: Constituents},
+  {path: '/sectorAllocation', component: SectorAllocation},
+  {path: '/ownershipActivity', component: OwnershipActivity},
+  {path: '/universeComparison', component: UniverseComparison},
+  {path: '/constituentHoldings', component: ConstituentHoldings} 
 ];

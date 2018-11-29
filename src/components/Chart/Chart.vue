@@ -1,6 +1,6 @@
 <template>  
   <div class="row">
-    <highcharts :options="chartOptions" :updateArgs="updateArgs"></highcharts>      
+    <highcharts :options="chartOptions"></highcharts>      
   </div>
 </template>
 
@@ -8,8 +8,7 @@
 export default {
   props: ['chart'],
   data () {
-    return {
-      title: '',
+    return {      
       seriesColor: '#6fcd98',
       colorInputIsSupported: null,
       animationDuration: 1000,
